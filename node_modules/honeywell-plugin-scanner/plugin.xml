@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="honeywell-plugin-scanner" version="0.0.3">
+    <name>HoneywellScannerPlugin</name>
+
+    <description>An Android Cordova plugin that allows users to scan barcodes on Honeywell devices.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,barcode,honeywell</keywords>
+    <repo></repo>
+    <issue></issue>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/HoneywellScannerPlugin.js" name="HoneywellScannerPlugin">
+        <clobbers target="window.plugins.HoneywellScannerPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="HoneywellScannerPlugin">
+                <param name="android-package" value="com.tmdiwakara.cordova.honeywell.HoneywellScannerPlugin"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="com.honeywell.decode.permission.DECODE" />
+        </config-file>
+
+        <source-file src="src/android/HoneywellScannerPlugin.java" target-dir="src/com/tmdiwakara/cordova/honeywell" />
+    </platform>
+</plugin>

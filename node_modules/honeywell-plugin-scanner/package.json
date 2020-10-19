@@ -1,0 +1,35 @@
+{
+  "name": "honeywell-plugin-scanner",
+  "version": "0.0.2",
+  "description": "An Android Cordova plugin that allows users to scan barcodes on Honeywell devices.",
+  "cordova": {
+    "id": "honeywell-plugin-scanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjgode/HoneywellScannerPlugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "Android",
+    "Barcode",
+    "Honeywell",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Josef Gode <nobody@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hjgode/HoneywellScannerPlugin/issues"
+  },
+  "homepage": "https://github.com/hjgode/HoneywellScannerPlugin/"
+}
